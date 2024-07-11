@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em; }
+h2{ font-size: 2.5em; }
+h3{ font-size: 2em; }
+p{ font-size: 1.20; }
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 5);
+    color: white;
+    background-color: blue;
+}
+
+button:hover{
+    background-color: black;
+}
+
+.contenedor{
+    max-width: 1266px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .titulo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+header .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(4, 112, 112);
+}
+
+#principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+    ,url(Imagenes/fondos-de-pantalla-3d-paisaje.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#contenido-continuo .contenedor2{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#mas-informacion .contenedor3{
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    padding: 200px 0px;
+}
+
+#mas-informacion .Info{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.Info:first-child{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+    ,url(Imagenes/imagen-fotografica-fondo-pantalla-hd-aviones-combate_993236-9310.avif);
+}
+
+.Info:nth-child(2){
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+    ,url(Imagenes/plan-aviones-combate-cielo-preocupante_862994-2763.avif);
+}
+
+.Info:nth-child(3){
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+    ,url(Imagenes/vector-avion-combate-hd-8k-fondo-pantalla-imagen-fotografica-stock_853645-65571.avif);
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    color: rgb(100, 100, 100);
+    padding: 10px;
+}
+
+footer .contenedor4{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    
+    header .contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #contenido-continuo .contenedor2{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #contenido-continuo .texto2{
+        width: 50%;
+        text-align: initial;
+        padding: 0px 50px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contenido-continuo h2{
+        margin-top: 0px;
+        margin-right: 25px;
+        
+    }
+
+    #contenido-continuo .img-contenedor{
+        background-image: url(Imagenes/jumbo-jet-volando-cielo_23-2150895681.avif);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #mas-informacion .Informacion{
+        display: flex;
+        justify-content: center;
+    }
+
+    #mas-informacion p{
+        display: block;
+        margin-top: 50px;
+    }
+
+    #mas-informacion h3{
+        margin-top: 0px;
+    }
+
+    #mas-informacion .Info{
+        padding: 15px;
+        background-size: 100% 80px;
+        background-repeat: no-repeat;
+        background-position-y: 0px;
+        background-color: rgb(50, 50, 50,0.5);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        margin-top: 25px;
+    }
+
+    #mas-informacion h3{
+        justify-content: center;
+        font-size: 1.5em;
+    }
+
+    .Info:first-child{
+        background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+        ,url(Imagenes/imagen-fotografica-fondo-pantalla-hd-aviones-combate_993236-9310.avif);
+    }
+    
+    .Info:nth-child(2){
+        background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+        ,url(Imagenes/plan-aviones-combate-cielo-preocupante_862994-2763.avif);
+    }
+    
+    .Info:nth-child(3){
+        background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+        ,url(Imagenes/vector-avion-combate-hd-8k-fondo-pantalla-imagen-fotografica-stock_853645-65571.avif);
+    }
+
+    footer .contenedor4{
+        font-size: 0.78em;
+    }
+
+}
